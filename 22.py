@@ -7,3 +7,6 @@ gen_exp = (x * x for x in range(5))
 print(gen_exp)
 for i in range(5):
  print(next(gen_exp), end=' ')
+
+for i in gen_exp:
+  print(i)
