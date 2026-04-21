@@ -1,5 +1,10 @@
-import pandas as pd
+import pandas
 
-df = pd.read_csv('data.csv')
+mydataset = {
+  'cars': ["BMW", "Volvo", "Ford"],
+  'passings': [3, 7, 2]
+}
 
-print(df.to_string()) 
+myvar = pandas.DataFrame(mydataset)
+
+print(myvar)
